@@ -1,5 +1,6 @@
 *.mp3
 *.wav
+*.png
 .vscode
 freesound-python/
 freesound_v0/
