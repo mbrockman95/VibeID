@@ -4,11 +4,12 @@ import sys, os
 
 
 
-#dbc.download()
+dbc.download()
 
-#os.system("audio-convert.sh")
+os.system("audio-convert.sh")
 
 os.chdir('outputs')
 	
 print("Current Working Directory " , os.getcwd())
 os.system('wav_to_spectrogram.py')
+
