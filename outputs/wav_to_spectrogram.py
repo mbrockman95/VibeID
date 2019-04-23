@@ -86,8 +86,11 @@ def plotstft(audiopath, binsize=2**10, plotpath=None, colormap="jet"):
 
     return ims
 
-import glob
-
+for filename in glob.glob('*.txt'):
+    print(filename)
 for filename in glob.glob('*.wav'):
-   print(filename)
-   ims = plotstft(filename,plotpath=True)
+    print('loop')
+    print(filename+'- plotting')
+    ims = plotstft(filename,plotpath=True)
+    
+print('tried')
